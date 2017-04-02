@@ -14,8 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Date 04/06/2013
- * @author Tushar Roy
+ *
  *
  * Data structure to support following operations
  * extracMin - O(logn)

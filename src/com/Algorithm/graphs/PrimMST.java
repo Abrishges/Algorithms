@@ -15,8 +15,6 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Date 10/11/2014
- * @author Tushar Roy
  *
  * Find minimum spanning tree using Prim's algorithm
  *
