@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.Algorithm.tree;
+package com.Algorithm.trees;
 
 /**
  * @author aberehamwodajie
