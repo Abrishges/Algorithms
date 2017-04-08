@@ -4,7 +4,7 @@
 package com.Algorithm.trees;
 
 /**
- * @author aberehamwodajie
+ * @author Abereham wodajie
  *
  * Nov 26, 2016
  */
