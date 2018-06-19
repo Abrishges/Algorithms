@@ -48,5 +48,8 @@ public class MainForTest {
     final DFS2 dfs2 = new DFS2();
     final Node start = graph.getAllNodes().get("A");
     dfs2.DFS(graph, start);
+
+    // clear Nodes
+    graph.clearNodes();
   }
 }
