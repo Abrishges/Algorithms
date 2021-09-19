@@ -25,12 +25,13 @@ public class MapByGroup {
 
     System.out.println(map);
 
-    // summing qt with the same groupId
+    //summing qt with the same groupId
 
     System.out.println("Great way of doing grouping ");
 
     final Map<String, List<String>> idToNameMapping = items.stream().collect(
         Collectors.groupingBy(Item::getId, Collectors.mapping(Item::getName, Collectors.toList())));
+    
     System.out.println(idToNameMapping);
   }
 }

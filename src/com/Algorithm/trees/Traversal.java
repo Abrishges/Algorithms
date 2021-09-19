@@ -10,7 +10,7 @@ public class Traversal {
 
     public static void main(String args[]){
         //inserting node in level order 12, 10, 18, 28, 34, 67, 45
-        Node root = new Node(12);
+        Node<Integer> root = new Node<Integer>(12);
         root.left = new Node(10);
         root.right = new Node (18);
         root.left.right = new Node(34);
