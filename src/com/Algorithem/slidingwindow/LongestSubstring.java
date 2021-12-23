@@ -1,5 +1,7 @@
 package com.Algorithem.slidingwindow;
-
+/*
+ * Given a string and positive number k, find the longest substring of a string containing k distinct characters 
+ */
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,7 +33,7 @@ public class LongestSubstring {
 			if (!mp.containsKey(str.charAt(j))) {
 				count++;
 			}
-
+            //mp.put(str.charAt(j), mp.getOrDefault(str.charAt(j), 0)) + 1)
 			mp.merge(str.charAt(j), 1, Integer::sum);
 
 			while (count > k) {

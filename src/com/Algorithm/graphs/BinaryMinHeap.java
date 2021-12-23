@@ -4,9 +4,8 @@
 package com.Algorithm.graphs;
 
 /**
- * @author aberehamwodajie
  *
- * Nov 18, 2016
+ * Nov 18, 2019
  */
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -44,7 +43,7 @@ public class BinaryMinHeap<T> {
     }
 
     /**
-     * Add key and its weight to they heap
+     * Add key and its weight to the heap
      */
     public void add(int weight,T key) {
         Node node = new Node();
