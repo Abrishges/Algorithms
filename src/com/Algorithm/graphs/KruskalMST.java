@@ -9,7 +9,6 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * @author aberehamwodajie
  * *         <p>
  *         Find minimum spanning tree usinig Kruskals algorithm
  *         <p>

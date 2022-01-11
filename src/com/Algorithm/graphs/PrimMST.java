@@ -100,6 +100,7 @@ public class PrimMST {
         graph.addEdge(6, 7, 1);
         graph.addEdge(7, 8, 7);*/
 
+        // id1, id2 and weight
         graph.addEdge(1, 2, 3);
         graph.addEdge(2, 3, 1);
         graph.addEdge(3, 1, 1);
