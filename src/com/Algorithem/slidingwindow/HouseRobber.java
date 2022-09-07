@@ -28,7 +28,7 @@ public class HouseRobber {
 		 }
 		 
 		 if (n == 1) {
-			 return array[1];
+			 return array[0];
 		 }
 		 
 		 if (n == 2 ) {
