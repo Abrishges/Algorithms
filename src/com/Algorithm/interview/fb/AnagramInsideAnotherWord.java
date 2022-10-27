@@ -1,4 +1,4 @@
-package com.ticketmaster.com.fb;
+package com.Algorithm.interview.fb;
 
 /*
  * Check if anagram of a word exists in another word, and return index if it exists

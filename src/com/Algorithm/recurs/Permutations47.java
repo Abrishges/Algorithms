@@ -1,19 +1,17 @@
 package com.Algorithm.recurs;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
+import java.util.Map;
 
 
-// this is wrong, need to be done again
+//https://leetcode.com/problems/permutations-ii/
 public class Permutations47 {
 
 	public static void main(String[] args) {
-		int [] nums = {1, 2, 2};
+		int [] nums = {1, 1, 2};
 
 		Permutations47 pm = new Permutations47();
 		System.out.println(pm.permuteUnique(nums));
@@ -24,37 +22,43 @@ public class Permutations47 {
     public List<List<Integer>> permuteUnique(int[] nums) {
         
     	List<List<Integer>> result = new ArrayList<List<Integer>>();
-    	//List<Integer>list = new ArrayList<Integer>();
-
-    	List<Integer> list = Arrays.stream(nums).boxed().collect(Collectors.toList());
-    	Collections.sort(list);
+ 
+    	List<Integer> list = new LinkedList<Integer>();
+    	Map<Integer, Integer> mp = new HashMap<Integer, Integer>();
     	
-        int i = 0;
-    	helper(list , result, i);
+    	for (int num : nums) {
+    	    mp.put(num, mp.getOrDefault(num, 0) + 1);
+    	}
+    	
+        backtrack(result, mp, list, nums);
     	
     	return result;
     }
     
-    public void helper(List<Integer> list, List<List<Integer>> result, int i) {
-    	
-    	if (i == list.size()) {
-    		result.add(new ArrayList<Integer>(list));	
-    		return;
-    	}
-    	
-    	//Set<Integer> set = new HashSet();    	
-    	for (int j = i; j < list.size(); j++) {
-    		
-    		if (i != j && list.get(i) == list.get(j)) {
-    			continue;
-    		}
-    		
-    		Collections.swap(list, i, j);
-    		i++;
-    		helper(list, result, i);
-    		i--;
-    		Collections.swap(list, j, i);
-
-    	}	
+   public void backtrack(List<List<Integer>> result, Map<Integer, Integer> mp, List<Integer> list, int [] nums ) {
+	   
+	   if (list.size() == nums.length) {
+		   result.add(new ArrayList<Integer>(list));
+		   return;
+	   }
+	   
+	   for (Map.Entry<Integer, Integer> entry: mp.entrySet()) {
+		   
+		   int key = entry.getKey();
+		   int value = entry.getValue();
+		   
+		   if (value == 0) {
+			   continue;
+		   }
+		   
+		   list.add(key);
+		   mp.put(key, value - 1);
+		   
+		   backtrack(result, mp, list, nums);
+		   
+		   list.remove(list.size() - 1);
+		   mp.put(key, value);
+	   }
+	   
     }
 }

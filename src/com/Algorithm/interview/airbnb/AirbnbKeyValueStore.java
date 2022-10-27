@@ -1,4 +1,4 @@
-package com.Algorithem.interviews;
+package com.Algorithm.interview.airbnb;
 
 import java.util.Map;
 
