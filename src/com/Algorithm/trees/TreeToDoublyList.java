@@ -1,7 +1,8 @@
 package com.Algorithm.trees;
 
 //https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/
-//This can be done with recursion also
+//This can be done with iteration also
+//why the first and last are global variables
 public class TreeToDoublyList {
 
 	class Node {

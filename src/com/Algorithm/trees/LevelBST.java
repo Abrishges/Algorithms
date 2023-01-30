@@ -1,7 +1,5 @@
 package com.Algorithm.trees;
 
-import com.Algorithm.trees.NoBST.Node;
-
 //Get Level of a node in a Binary Tree
 public class LevelBST {
 	

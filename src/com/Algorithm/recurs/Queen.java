@@ -23,9 +23,7 @@ public class Queen {
 		Set<Integer> adset = new HashSet<Integer>();
 		Set<Integer> dset = new HashSet<Integer>();
 
-		int result = backTrackQueens(n, 0, cset, dset, adset);
-
-		return result;
+		return backTrackQueens(n, 0, cset, dset, adset);
 	}
 
 	public int backTrackQueens(int size, int row, Set<Integer> cset, Set<Integer> dset, Set<Integer> adset) {

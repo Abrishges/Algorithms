@@ -13,22 +13,25 @@ public class DiameterOfTree2 {
         
         if (root == null) return result;
         
-        dfs(root);
+        bottomUpDFS(root);
     
        return result;
     }
 
     //This is post order
-   public int dfs(Node node) {
+    //information follows from leaf to root
+   public int bottomUpDFS(Node node) {
        
       if (node == null) return 0;
        
-      int l =  dfs(node.left);
-      int r =  dfs(node.right);
-       
-      result = Math.max(result, l + r);
+      //result of left and right
+      int left =  bottomUpDFS(node.left);
+      int right =  bottomUpDFS(node.right);
+      // then Process information sent back by child nodes (Post-Order)
+      // and then return to the parent
+      result = Math.max(result, left + right);
           
-     return Math.max(l, r) + 1;
+     return Math.max(left, right) + 1;
    }
 
 	public static void main(String[] args) {

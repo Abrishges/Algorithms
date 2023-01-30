@@ -1,6 +1,7 @@
 package com.Algorithm.trees;
 
 // Construct BST from a give preOrder in o(n) time
+//https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/description/
 /*
  *  {10, 5, 1, 7, 40, 50}
  *          10

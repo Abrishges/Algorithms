@@ -2,20 +2,19 @@ package com.Algorithm.trees;
 
 //Serialize and Deserialize a binary tree? 
 // Given a binary tree serialize it to string and deserialize it from string to binary tree.
+//https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/
 public class SerializeBT {
 	
-	class Node {
-		Node left; 
-		Node right; 
-		int data;
-		
-		public Node(int data) {
-			this.data = data;
-			this.left = this.right = null;
-		}
+	public static void main(String[] args) {
+		Node root = new Node(1);
+		root.left = new Node(2);
+		root.right = new Node(3);
+		root.right.left = new Node(4);
+		root.right.right = new Node(5);
+        System.out.println(serialize(root));
 	}
-	
-	public String serialize(Node root) {
+		
+	public static String serialize(Node root) {
 		StringBuilder sb = new StringBuilder();
 	
 		 if (root == null) return null;
@@ -23,14 +22,14 @@ public class SerializeBT {
 		return sb.toString();
 	}
 	
-	public void serialize (Node node, StringBuilder sb) {
+	public static void serialize (Node node, StringBuilder sb) {
 		
 		 if (node == null) {
 			 sb.append("#").append(" ");
 			 return;
 		 }
 		  
-		 sb.append(node.data).append(" ");
+		 sb.append(node.value).append(" ");
 		 
 		 serialize(node.left, sb);
 		 serialize(node.right, sb);
@@ -62,10 +61,4 @@ public class SerializeBT {
 		
 	    return root;
 	}
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

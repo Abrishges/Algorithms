@@ -4,11 +4,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * @author Abereham Wodajie
- *         DFS using iteration
- *         Aug 27, 2017
- */
 public class DFS1 {
   // final Graph graph = new Graph();
 

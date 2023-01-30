@@ -7,11 +7,6 @@ import java.util.Scanner;
 
 import com.Algorithm.test.Graph;
 
-/**
- * @author Abereham Wodajie
- *
- *         Jun 4, 2017
- */
 public class DFScycleTest {
 
   public static void main(final String[] args) {

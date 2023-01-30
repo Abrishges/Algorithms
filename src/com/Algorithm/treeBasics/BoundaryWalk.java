@@ -1,6 +1,6 @@
-package com.Algorithm.recurs;
+package com.Algorithm.treeBasics;
 
-public class Robot {
+public class BoundaryWalk {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -7,7 +7,7 @@ public class LPSString {
 
 	public static void main(String[] args) {
 
-		String str = "mbadm$mdabm";
+		String str = "abbaacd$dcaabba";
 
 		LPSString lps = new LPSString();
 		System.out.println(Arrays.asList(Arrays.toString(lps.LPSOfString(str))));

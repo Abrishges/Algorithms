@@ -2,11 +2,6 @@ package com.Algorithm.graphBasic;
 
 import java.util.Stack;
 
-/**
- * @author Abereham Wodajie
- *         DFS using stack
- *         May 22, 2017
- */
 public class DFS2 {
 
   public void DFS(final Graph graph, final Node node) {
