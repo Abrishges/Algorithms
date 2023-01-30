@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class DFS1 {
-  // final Graph graph = new Graph();
 
   // For disconnected graphs, node is for starting node
   public void DFS(final Graph graph) {

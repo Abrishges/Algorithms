@@ -87,6 +87,8 @@ public class Graph {
 	}
 
 	public List<String> getAllVertics() {
+		   //I think we can do like this too
+		  //List<String> allVertics = new ArrayList<String>(allNodes.keySet());
 		return this.adjListMap.entrySet().stream().map(Map.Entry::getKey).collect(Collectors.toList());
 	}
 
